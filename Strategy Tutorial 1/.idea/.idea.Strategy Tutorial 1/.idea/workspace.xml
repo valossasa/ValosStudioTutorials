@@ -7,6 +7,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/SourceGeneratedDocuments/CC65EBACA1DC39066A6A3764/Godot.SourceGenerators/Godot.SourceGenerators.ScriptSignalsGenerator/StrategyTutorial1.Signals.GameplaySignals_ScriptSignals.generated.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bb098112a142440d8e4866128c604d1c3e6c00/fd/540339ae/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -67,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674809406845</updated>
       <workItem from="1674809408815" duration="2423000" />
-      <workItem from="1674858071984" duration="2182000" />
+      <workItem from="1674858071984" duration="4435000" />
     </task>
     <servers />
   </component>
@@ -77,24 +81,5 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Characters/Cameras/MainCamera.cs</url>
-          <line>55</line>
-          <properties documentPath="D:\Game Development\Git\ValosStudioTutorials\Strategy Tutorial 1\Characters\Cameras\MainCamera.cs" initialLine="55" containingFunctionPresentation="method '_PhysicsProcess'">
-            <startOffsets>
-              <option value="1321" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1346" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

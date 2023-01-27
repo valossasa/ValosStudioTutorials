@@ -5,5 +5,5 @@ namespace StrategyTutorial1.Signals;
 public partial class GameplaySignals : Node
 {
     [Signal]
-    public delegate void PlaceObjectEventHandler(PackedScene preview, PackedScene buildable, uint mask);
+    public delegate void PlaceObjectEventHandler(PackedScene buildable, uint mask);
 }

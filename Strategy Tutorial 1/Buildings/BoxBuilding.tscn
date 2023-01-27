@@ -5,7 +5,6 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_7t3wb"]
 
 [node name="BoxBuilding" type="StaticBody3D"]
-collision_layer = 0
 collision_mask = 0
 
 [node name="Box" type="MeshInstance3D" parent="."]

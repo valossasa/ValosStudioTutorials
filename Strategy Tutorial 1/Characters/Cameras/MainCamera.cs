@@ -1,6 +1,5 @@
 using Godot;
 using Godot.Collections;
-using StrategyTutorial1.Buildings;
 using StrategyTutorial1.Signals;
 
 namespace StrategyTutorial1.Characters.Cameras;
@@ -10,11 +9,10 @@ public partial class MainCamera : Camera3D
     [Export()] public float RayLength { get; set; } = 100f;
 
     private uint _collisionMask;
-    private IBuildable _buildable;
-    private PackedScene _preview;
     private PackedScene _build;
     private Array _excluded;
     private World3D _world;
+    private Window _root;
 
     public override void _Ready()
     {
@@ -25,15 +23,15 @@ public partial class MainCamera : Camera3D
         _excluded = new Array { this };
 
         _world = GetWorld3d();
+        
+        _root = GetTree().Root;
 
         SetPhysicsProcess(false);
     }
 
-    private void GameplaySignalsOnPlaceObject(PackedScene preview, PackedScene buildable, uint mask)
+    private void GameplaySignalsOnPlaceObject(PackedScene buildable, uint mask)
     {
-        SetPhysicsProcess(preview != null);
-
-        _preview = preview;
+        SetPhysicsProcess(buildable != null);
 
         _build = buildable;
 
@@ -42,12 +40,10 @@ public partial class MainCamera : Camera3D
 
     public override void _PhysicsProcess(double delta)
     {
-        if (Input.IsActionPressed("CancelAction"))
+        if (Input.IsActionPressed("Cancel"))
         {
-            GameplaySignalsOnPlaceObject(null, null, 0);
-
-            CleanPreview();
-
+            GameplaySignalsOnPlaceObject(null, 0);
+            
             return;
         }
 
@@ -55,7 +51,14 @@ public partial class MainCamera : Camera3D
 
         if (collisions.Count > 0)
         {
-            // DetectBuildable((IBuildable)collisions["collider"]);
+            if (Input.IsActionPressed("Action"))
+            {
+                Node3D scene = _build.Instantiate<Node3D>();
+
+                _root.AddChild(scene);
+
+                scene.GlobalPosition = (Vector3)collisions["position"];
+            }
         }
     }
 
@@ -72,36 +75,5 @@ public partial class MainCamera : Camera3D
         PhysicsRayQueryParameters3D parameters = PhysicsRayQueryParameters3D.Create(from, to, _collisionMask, null);
 
         return spaceState.IntersectRay(parameters);
-    }
-
-    private void DetectBuildable(IBuildable buildable)
-    {
-        if (buildable != _buildable)
-        {
-            CleanPreview();
-        }
-
-        if (Input.IsActionPressed("Action"))
-        {
-            buildable?.Build(_build);
-
-            return;
-        }
-
-        if (_buildable == buildable)
-        {
-            return;
-        }
-
-        _buildable = buildable;
-
-        buildable.PreviewShow(_preview);
-    }
-
-    private void CleanPreview()
-    {
-        _buildable?.PreviewHide();
-
-        _buildable = null;
     }
 }

@@ -1,6 +1,5 @@
 using Godot;
 using Godot.Collections;
-using StrategyTutorial1.Buildings;
 
 namespace StrategyTutorial1.Characters.Cameras;
 
