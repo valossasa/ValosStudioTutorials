@@ -55,7 +55,7 @@ public partial class MainCamera : Camera3D
 
         if (collisions.Count > 0)
         {
-            DetectBuildable((IBuildable)collisions["collider"]);
+            // DetectBuildable((IBuildable)collisions["collider"]);
         }
     }
 

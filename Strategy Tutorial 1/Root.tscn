@@ -1,13 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://xaaqmcxyclbn"]
+[gd_scene load_steps=6 format=3 uid="uid://xaaqmcxyclbn"]
 
 [ext_resource type="PackedScene" uid="uid://dqgbjl0tdv3qo" path="res://Characters/Player.tscn" id="1_f7a66"]
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_xy8rh"]
+[ext_resource type="PackedScene" uid="uid://c5vyxsjynxo50" path="res://Grounds/BuildableGround.tscn" id="2_dc4aq"]
+[ext_resource type="PackedScene" uid="uid://bw7mf4nd4g220" path="res://Characters/Cameras/SimpleCamera.tscn" id="2_xqfeo"]
+[ext_resource type="PackedScene" uid="uid://c1ygsqaombdhu" path="res://Grounds/BlockedGround.tscn" id="3_2a7en"]
+[ext_resource type="PackedScene" uid="uid://dhs4feeacumoh" path="res://Buildings/BoxBuilding.tscn" id="5_utxas"]
 
 [node name="Root" type="Node3D"]
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_f7a66")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.85909, 0)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
-mesh = SubResource("PlaneMesh_xy8rh")
+[node name="SimpleCamera" parent="CharacterBody3D" instance=ExtResource("2_xqfeo")]
+Building = ExtResource("5_utxas")
+
+[node name="Ground" parent="." instance=ExtResource("2_dc4aq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="BlockedGround" parent="." instance=ExtResource("3_2a7en")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
