@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqgbjl0tdv3qo"]
+
+[ext_resource type="Script" path="res://Characters/Player.cs" id="1_rxjub"]
+
+[node name="CharacterBody3D" type="StaticBody3D"]
+script = ExtResource("1_rxjub")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.0925096, 0.995712, 0, -0.995712, 0.0925096, 0, 1.65181, 0)
