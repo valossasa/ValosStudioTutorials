@@ -5,7 +5,7 @@ namespace StrategyTutorial1.Buttons;
 
 public partial class BuildingButton : Button
 {
-    [Export(PropertyHint.Layers3dPhysics)] public uint CollisionMask { get; set; }
+    [Export(PropertyHint.Layers3DPhysics)] public uint CollisionMask { get; set; }
     [Export()] public PackedScene Building { get; set; }
 
     private GameplaySignals _gameplaySignals;

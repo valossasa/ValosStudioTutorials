@@ -17,20 +17,20 @@ public partial class Player : StaticBody3D
 		
 		if (Input.IsActionPressed("MoveLeft"))
 		{
-			_direction.x = -1;
+			_direction.X = -1;
 		}
 		else if (Input.IsActionPressed("MoveRight"))
 		{
-			_direction.x = 1;
+			_direction.X = 1;
 		}
 
 		if (Input.IsActionPressed("MoveForward"))
 		{
-			_direction.z = -1;
+			_direction.Z = -1;
 		}
 		else if (Input.IsActionPressed("MoveBackward"))
 		{
-			_direction.z = 1;
+			_direction.Z = 1;
 		}
 
 		MoveAndCollide(_direction * Speed * (float)delta);

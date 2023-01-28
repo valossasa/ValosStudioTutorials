@@ -7,18 +7,18 @@ public partial class SimpleCamera : Camera3D
 {
     [Export()] public float RayLength { get; set; } = 100f;
 
-    [Export(PropertyHint.Layers3dPhysics)] public uint CollisionMask { get; set; }
+    [Export(PropertyHint.Layers3DPhysics)] public uint CollisionMask { get; set; }
     [Export()] public PackedScene Building { get; set; }
 
-    private Array<RID> _excluded;
+    private Array<Rid> _excluded;
     private World3D _world;
     private Window _root;
 
     public override void _Ready()
     {
-        _excluded = new Array<RID>();
+        _excluded = new Array<Rid>();
 
-        _world = GetWorld3d();
+        _world = GetWorld3D();
 
         _root = GetTree().Root;
     }

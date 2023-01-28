@@ -22,7 +22,7 @@ public partial class MainCamera : Camera3D
 
         _excluded = new Array { this };
 
-        _world = GetWorld3d();
+        _world = GetWorld3D();
         
         _root = GetTree().Root;
 
