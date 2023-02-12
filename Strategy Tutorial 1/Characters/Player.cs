@@ -34,6 +34,5 @@ public partial class Player : StaticBody3D
 		}
 
 		MoveAndCollide(_direction * Speed * (float)delta);
-		
 	}
 }
