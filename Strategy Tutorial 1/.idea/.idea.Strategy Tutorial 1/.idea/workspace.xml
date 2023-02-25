@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f07b969-d0e5-490e-960a-81be11a9caeb" name="Changes" comment="" />
+    <list default="true" id="5f07b969-d0e5-490e-960a-81be11a9caeb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Strategy Tutorial 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Strategy Tutorial 1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strategy Tutorial 1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Strategy Tutorial 1.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/SourceGeneratedDocuments/CC65EBACA1DC39066A6A3764/Godot.SourceGenerators/Godot.SourceGenerators.ScriptSignalsGenerator/StrategyTutorial1.Signals.GameplaySignals_ScriptSignals.generated.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bb098112a142440d8e4866128c604d1c3e6c00/fd/540339ae/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,7 +35,7 @@
 }</component>
   <component name="RunManager" selected=".NET Executable.Player">
     <configuration name="Editor" type="RunExe" factoryName=".NET Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Godot4/Godot_v4.0-beta16_mono_win64/Godot_v4.0-beta16_mono_win64.exe" />
+      <option name="EXE_PATH" value="/Applications/Godot_mono_4_rc_3.app/Contents/MacOS/Godot" />
       <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot; --editor" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -49,7 +48,7 @@
       </method>
     </configuration>
     <configuration name="Player" type="RunExe" factoryName=".NET Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Godot4/Godot_v4.0-beta16_mono_win64/Godot_v4.0-beta16_mono_win64.exe" />
+      <option name="EXE_PATH" value="/Applications/Godot_mono_4_rc_3.app/Contents/MacOS/Godot" />
       <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot;" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -73,13 +72,27 @@
       <workItem from="1674809408815" duration="2423000" />
       <workItem from="1674858071984" duration="4435000" />
       <workItem from="1674895567854" duration="492000" />
+      <workItem from="1677192818227" duration="528000" />
+      <workItem from="1677306462970" duration="21000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
