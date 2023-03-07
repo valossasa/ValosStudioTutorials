@@ -13,7 +13,7 @@ public partial class Player : StaticBody3D
 
 	public override void _PhysicsProcess(double delta)
 	{
-		_direction = new Vector3();
+		_direction = Vector3.Zero;
 		
 		if (Input.IsActionPressed("MoveLeft"))
 		{
